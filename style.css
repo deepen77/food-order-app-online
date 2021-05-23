@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -7,7 +7,7 @@
 }
 
 html {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -26,6 +26,25 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+p {
+  font-size: 1rem;
+  font-weight: 400;
+   margin-bottom: 1.5rem;
+}
+h1,
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+   margin-bottom: 1.5rem;
+}
+.section {
+  padding-top: 8rem;
 }
 
 /* Navbar */
@@ -47,7 +66,7 @@ img {
 }
 
 .container {
-  max-width: 768px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -72,7 +91,6 @@ img {
   font-size: 0.813rem;
   color: #242329;
   font-weight: 500;
-  
 }
 
 .nav__link:hover {
@@ -153,6 +171,56 @@ img {
   color: #1a0390;
 }
 
+/* Home Section */
+
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem;
+} 
+
+.home__container__content {
+  align-self: center;
+}
+
+.social-icons {
+    margin-top: 4rem;
+    display: flex;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  color: #242329;
+  padding: 0.5rem;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  margin-right:2rem;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: #3e3d42;
+  color: #ffffff;
+}
+
+.home__image {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.img__home_image {
+    border-radius: 10%;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
+}
+
 
 @media screen and (max-width: 767px) {
   .navigation__menu {
@@ -183,4 +251,13 @@ img {
   .nav__bar {
     display: block;
   }
+
+  .home__container {
+  grid-template-columns: 1fr;
+  padding: 2rem;
+}
+.social-icons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 }
