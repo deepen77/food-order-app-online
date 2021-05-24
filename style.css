@@ -221,6 +221,15 @@ h3 {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
 }
 
+.item__img  {
+  padding: 1rem;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+.item__img:hover {
+  transform: scale(1.01);
+}
+
 /* menu section */
 .menu__title {
   width: 100%;
@@ -270,6 +279,19 @@ h3 {
   color: #ffffff;
 }
 
+
+.about__content__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5rem;
+} 
+
+.content__image img {
+    border-radius: 10%;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+
 @media screen and (max-width: 767px) {
   .navigation__menu {
     position: fixed;
@@ -317,5 +339,10 @@ h3 {
   grid-template-columns: 1fr;
   padding: 2rem;
 }
+
+.about__content__wrapper {
+  grid-template-columns:1fr;
+  padding: 2rem;
+} 
 
 }
