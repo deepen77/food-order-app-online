@@ -244,35 +244,157 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
+  
+  
 }
 .menu__items .item {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.08);
   background-color: #ffffff;
    border-radius: 3rem;
+   position: relative;
+   overflow: hidden;
+   
+   
+   
+
+
 }
 .menu__items .item img {
   border-radius: 3rem;
 }
+
+
+.item_addition {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  background-color: #ffffff;
+  border-radius: 3rem;
+  transition: all 1.5s ease-in-out;
+
+}
+
+.item_addition_wrapper {
+  position: relative;
+}
+
+.item_addition_wrapper .uil-times-circle {
+  position: absolute;
+  right: 2rem;
+  top: -0.5rem;
+  font-size: 1.5rem;
+}
+
+.plus__wrapper {
+  position: absolute;
+  background-color: rgb(241, 239, 239);
+  border-radius: 40px;
+  
+  right: 2rem;
+  bottom: 0.2rem;
+  width: 8rem;
+  height: 3rem;
+ 
+}
+
+.plus__wrapper__content {
+  position: relative;
+}
+
+.plus__wrapper__content .uil-plus-circle {
+  display: block;
+  position: absolute;
+  font-size: 3rem;
+  line-height: 3rem;
+  right: 0;
+  color: #dddada;
+  background-color: #4d4d4e;
+  border-radius: 0 40px 40px 0;
+}
+
+
+.select__size {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+.sizes {
+  display: flex;
+  justify-items: center;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+.sizes img:nth-child(1) {
+  width: 3rem;
+  height: 3rem;
+  
+}
+.sizes img:nth-child(2) {
+  width: 4rem;
+  height: 4rem;
+  
+}
+.sizes img:nth-child(3) {
+  width: 5rem;
+  
+}
+
+.radios {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+ 
+  margin-top: 1rem;
+}
+
+.toppings, .sauce {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
 .item-content {
   padding: 1.5rem 2rem;
+  height: 18rem;
+  position: relative;
 }
 
 .item-content h4 {
   font-size: 2rem;
   margin-bottom: 2rem;
   font-weight: 400;
+  
 }
 .item-content .price {
   font-size: 1rem;
   font-weight:500;
 }
+
+
 .cart-btn {
   display: inline-block;
+  position: absolute;
   color: #616060;
   background-color: #ebebeb;
   padding: 1rem 1.5rem;
   border-radius: 30px;
   transition: all 0.3s ease-in-out;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
 }
 .cart-btn:hover {
  background-color: #3e3d42;

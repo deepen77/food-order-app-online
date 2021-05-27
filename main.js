@@ -21,3 +21,25 @@ function linkAction() {
   navBar.classList.toggle("is-active");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+
+const cartBtn = document.querySelectorAll(".cart-btn");
+const cartAddition = document.querySelectorAll(".item_addition");
+
+
+for (let i = 0; i < cartBtn.length; i++) {
+  cartBtn[i].addEventListener("click", () => {
+    cartAddition[i].style.left = "0";
+    cartAddition[i].style.zIndex = "1";
+  });
+}
+
+
+closeBtn = document.querySelectorAll(".uil-times-circle");
+
+
+for (let i = 0; i < closeBtn.length; i++) {
+  closeBtn[i].addEventListener("click", () => {
+    cartAddition[i].style.left = "-100%";
+  });
+}
