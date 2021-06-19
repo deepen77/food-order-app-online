@@ -54,16 +54,35 @@ h3 {
   left: 0;
   top: 0;
   z-index: 100;
-  background-color: #fbfbfe;
+  background-color: #ededf1;
+
+
 }
 
 .nav {
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 2rem;
+  
 }
+
+.nav a.nav__logo {
+  position: relative;
+}
+
+.logo-text {
+  margin-left: 3rem;
+}
+
+.img__nav__logo {
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 
 .container {
   max-width: 1200px;
@@ -88,7 +107,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 0.813rem;
+  font-size: 1rem;
   color: #242329;
   font-weight: 500;
 }
@@ -431,6 +450,66 @@ h3 {
 }
 
 
+/* Footer */
+footer {
+  background-color: #242329;
+  color: #fff;
+}
+
+.footer-wrapper {
+  padding: 80px 0;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.footer-logo-image {
+ width: 100px;
+}
+
+.footer-logo {
+  margin-bottom: 1rem;
+  display: block;
+}
+.footer-wrapper .footer-col {
+  flex: 0 0 200px;
+}
+.footer-col h5 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.footer-col ul li {
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+.footer-col ul li:hover {
+  transform: translateY(-3px);
+}
+.footer-col ul li a {
+  color: #fff;
+  font-size: 0.8rem;
+  transition: all 0.3s ease-in-out;
+  text-transform: capitalize;
+}
+.footer-col ul li a:hover {
+  border-bottom: 1px solid white;
+}
+.copyright {
+  padding: 1.5rem 0;
+  text-align: center;
+  border-top: 1px solid white;
+}
+.copyright p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.copyright p a {
+  color: #fff;
+}
+
+
 
 
 
@@ -483,9 +562,23 @@ h3 {
 }
 
 .about__content__wrapper,
-.service__content__wrapper {
+.service__content__wrapper,
+.getapp__content__wrapper {
   grid-template-columns:1fr;
   padding: 2rem;
 } 
+
+.footer-wrapper {
+    padding: 3rem;
+    
+  }
+  .footer-wrapper .footer-col {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+  }
+  .menu-items {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
 
 }
